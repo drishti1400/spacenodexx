@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space launches</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <link rel="stylesheet" href="mycss.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+<body>	
+	<script>
+	alert("Please login to use this site!!");
+	</script>
+	<div class="sidebar" >
+  <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="/about"><i class="fa fa-fw fa-wrench"></i> About</a>
+  <a href="/login"><i class="fa fa-fw fa-user"></i> login/logout</a>
+</div>
+
+	<div class="container demo">
+		
+		<div id="aa">
+			<div id="large-header" class="large-header">
+				
+				<div class="simple-login-container">
+    <h2>Login Form</h2>
+					<form action="/login" method="POST">
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="text" name="username" class="form-control" placeholder="Username">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="password" name="password" placeholder="Enter your Password" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="submit" class="btn btn-block btn-login" placeholder="Enter your Password" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a href="/register">Register</a>
+        </div>
+    </div>
+						</form>
+</div>
+	
+				
+					<canvas id="demo-canvas"></canvas>
+	
+				</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/TweenLite.min.js"></script>
+<script type="text/javascript" src="js/EasePack.min.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+
+	
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space launches</title>
+	 <link rel="stylesheet" href="mycss.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<div class="sidebar" >
+  <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="/about"><i class="fa fa-fw fa-wrench"></i> About</a>
+  <a href="/login"><i class="fa fa-fw fa-user"></i> login/logout</a>
+</div>
+	<div class="container demo">
+		
+		<div id="aa">
+			<div id="large-header" class="large-header">
+	
+	<form class="form-horizontal" action="/register" method="POST">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Register Yourself</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="fname">First Name</label>  
+  <div class="col-md-4">
+  <input id="fname" name="fname" type="text" placeholder="John" class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lname">Last Name</label>  
+  <div class="col-md-4">
+  <input id="lname" name="lname" type="text" placeholder="Doe" class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-4">
+  <input id="email" name="username" type="text" placeholder="johndoe@example.com" class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="password">Password</label>
+  <div class="col-md-4">
+    <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+	
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="save"></label>
+  <div class="col-md-8">
+    <button id="save" name="save" class="btn btn-success">Register</button>
+    <button id="clear" name="clear" class="btn btn-danger">Reset</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+				<canvas id="demo-canvas"></canvas>
+				</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/TweenLite.min.js"></script>
+<script type="text/javascript" src="js/EasePack.min.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+	
+</body>
+</html>

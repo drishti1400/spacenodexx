@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space launches</title>
+	<style>
+		h5{
+			color: green;
+		}
+	</style>
+	 <link rel="stylesheet" href="mycss.css">
+	<link rel="stylesheet" href="img.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="sidebar" >
+  <a href="/home"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="/about"><i class="fa fa-fw fa-wrench"></i> About</a>
+  <a href="/logout"><i class="fa fa-fw fa-user"></i>logout</a>
+</div>
+<div class="container demo">
+		<div id="aa">
+			<div id="large-header" class="large-header">
+
+<%result["results"].forEach(function(lau) { %>
+<div>
+	<div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="<%= lau["slug"] %>"><img class="card-img-top" src="<%= lau["image"] %>" alt="image" width="300" height="250"></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="<%= lau["slug"] %>"><%= lau["name"] %></a>
+          </h4>
+			<h5>
+				<%= lau["location"] %><br>
+			    <%= lau["status"]["name"] %>
+			</h5>
+        </div>
+      </div>
+    </div>
+				</div>
+
+<% }) %>
+			</div>
+	</div>
+	</div>			
+				
+	
+	</body>
+</html>

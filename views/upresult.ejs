@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space launches</title>
+	<style>
+		h5{
+			color: green;
+		}
+	</style>
+	 <link rel="stylesheet" href="mycss.css">
+	<link rel="stylesheet" href="img.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="sidebar" >
+  <a href="/home"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="/about"><i class="fa fa-fw fa-wrench"></i> About</a>
+  <a href="/logout"><i class="fa fa-fw fa-user"></i>logout</a>
+</div>
+	   <div class="container demo">
+		<div id="aa">
+			<div id="large-header" class="large-header">
+				<ul class="event-list">
+				<%resu["results"].forEach(function(lau) { %>
+	
+					<li>				
+						<div class="info">
+							<h2 class="title"><%= lau["name"] %></h2>
+							<p class="desc">
+							<a href="<%= lau["slug"] %>">More details</a>
+						    </p>
+						</div>
+					</li>
+					
+				<% }) %>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	</body>
+</html>
